@@ -15,8 +15,8 @@ modified or extended with a configuration file in your home directory.
 
 ## Installation
 
-Until it is published to RubyGems, you'll have to clone the git repo and 
-build the gem file yourself. 
+The project is not currently published to RubyGems, so to install you'll have 
+to clone the git repo and build the gem file yourself: 
 
 ```
    git clone https://github.com/mcbridejc/makec.git
@@ -73,7 +73,7 @@ MakeC::Config.configure do
   end
   
   category "info" do |c|
-    c.match = ["in function"]
+    c.match = ["in function"]appeal
     c.bold = true
     c.priority = 1
   end
@@ -83,7 +83,6 @@ MakeC::Config.configure do
   # priority options have no effect. 
   default do |c|
     c.foreground = :green
-
   end
 end
 ```
@@ -93,11 +92,12 @@ end
 This project is derived from GilCC (http://www.onlysolutionssoftware.com/gilcc/),
 which was released under the MIT license by Gilson Motta. 
 I've adapted it to fit my tastes, to allow easier installation as a gem, to
-allow customization via config file, to print sub-process output as it is 
-available rather than wait for the build to complete, and to not have to see 
-colorful copyright/advertising banners every time I run make.
+allow customization via config file, and to print sub-process output as it is 
+available rather than wait for the build to complete.
  
 ## Licensing
 
 All code contained in this project is released under the MIT license, as 
-defined in the LICENSE file. 
+defined in the LICENSE file. As far as I'm concerned: use it, hack it, share it
+as you like. If you make some fix or add some feature that you think would
+have general appeal, pull requests are welcome! 
